@@ -1,0 +1,28 @@
+{
+  "name": "weekly-race-contracts",
+  "version": "1.0.0",
+  "description": "Weekly Race Contracts",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build:sol": "truffle compile",
+    "build:vyper": "truper",
+    "build": "yarn build:sol && yarn build:vyper",
+    "console": "truffle console",
+    "migrate:ganache": "truffle migrate --network ganache --reset",
+    "migrate:mainnet": "truffle migrate --network mainnet",
+    "test": "yarn build && truffle test"
+  },
+  "keywords": [
+    "Ethereum",
+    "Vyper"
+  ],
+  "author": "Rinaldo Rossi",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "moment": "^2.22.2"
+  }
+}
